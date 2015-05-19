@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+
+body {
+	background-color: #d68800;
+	background-image: url(http://www.transparenttextures.com/patterns/starring.png);
+	font-family: 'Monoton';
+  font-size: 50px;
+  color: #FFF;
+  line-height: normal;
+  text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+	font-size: 30px;
+	color: #d68800;
+}
+
+form {
+	width: 245px;
+	margin: 0 auto;
+}
+
+input {
+	width: 70px;
+	height: 70px;
+	border: none;
+	background: #EAB875;
+	font-size: 40px;
+	text-align: center;
+	color: #666;
+	overflow-y: hidden; 
+}
+.random {
+	-moz-box-shadow:    inset  0  25px 25px -25px #000000,
+	inset  0  -25px 25px -25px #000000;
+  -webkit-box-shadow: inset  0  25px 25px -25px #000000,
+  inset  0  -25px 25px -25px #000000;
+  box-shadow:         inset  0  25px 25px -25px #000000,
+  inset  0  -25px 25px -25px #000000;
+}
+
+.content{
+	width: 500px;
+	height: 318px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+ 	background-color: #666;
+ 	padding: 15px;
+ 	-moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+#glow p{
+  display: inline-block;
+  color: #FFF;
+  text-shadow: 0 0 15px;
+}
+#glow p:nth-child(odd) {
+  -webkit-animation: bglow .4s ease infinite;
+}
+#glow p:nth-child(even) {
+  -webkit-animation: rglow .4s ease infinite;
+}
+
+@-webkit-keyframes bglow {
+  0% {
+    color: rgb(232, 196, 42);
+    text-shadow: 0 0 15px;
+  }
+}
+@-webkit-keyframes rglow {
+  100% {
+    color: rgb(219, 132, 18);
+    text-shadow: 0 0 15px;
+  }
+}
